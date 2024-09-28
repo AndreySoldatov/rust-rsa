@@ -1,0 +1,17 @@
+[package]
+name = "rust_rsa"
+version = "0.1.0"
+edition = "2021"
+authors = ["Soldatov Andrey"]
+description = "RSA client"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "*"
+num-bigint = { version = "*", features = ["rand"] }
+num-traits = "*"
+num-integer = "*"
+num-prime = "*"
+serde = {version = "*", features = ["derive"]}
+serde_json = "*"
